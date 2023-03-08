@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  Alert, FlatList, Platform, StyleSheet,
+  Alert, FlatList, Platform, Pressable, StyleSheet,
   Text,
   ToastAndroid,
   TouchableOpacity,
@@ -20,8 +20,8 @@ function App(): JSX.Element {
 
   return (
     <View style={styles.container}>
-         <Cat></Cat>
-      <TouchableOpacity
+         <Fruit/>
+      <Pressable
         onPress={onPressHandler}>
         <View style={
           {
@@ -42,14 +42,14 @@ function App(): JSX.Element {
           }
           }> Submit</Text>
         </View>
-      </TouchableOpacity>
+      </Pressable>
     </View>
 
   );
 }
 
-// This is a Cat View
-const Cat = () => {
+// This is a Fruit View
+const Fruit = () => {
   const [arrayList, setArrayList] = useState([
     "Apple", "Orange", "Mango", "Banana", "Grape", "Pomegranate", "Pineapple",
      "Item1", "Item2", "item3", "Item4","Item5","Item6","Item7"
@@ -65,7 +65,7 @@ const Cat = () => {
         <FlatList
           data={arrayList}
           renderItem={listItem => (
-            <TouchableOpacity
+            <Pressable
             onPress={() => {
               if(Platform.OS === 'android'){
                 ToastAndroid.show(
@@ -94,7 +94,7 @@ const Cat = () => {
                 }}
               >{listItem.item}</Text>
             </View>
-            </TouchableOpacity>
+            </Pressable>
           )
           }
 
