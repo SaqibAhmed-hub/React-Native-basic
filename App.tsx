@@ -6,7 +6,6 @@ import {
   TouchableOpacity,
   View
 } from 'react-native';
-import { text } from 'stream/consumers';
 
 function App(): JSX.Element {
 
@@ -26,10 +25,12 @@ function App(): JSX.Element {
         onPress={onPressHandler}>
         <View style={
           {
-            width: 350,
+            width: 380,
+            margin:8,
             alignItems: 'center',
             justifyContent: 'center',
             backgroundColor: '#ff2245',
+            borderRadius:8
           }
         }>
           <Text style={{
@@ -38,7 +39,6 @@ function App(): JSX.Element {
             fontSize: 20,
             color: 'white',
             fontWeight : 'bold',
-            borderRadius : 8
           }
           }> Submit</Text>
         </View>
