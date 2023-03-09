@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import {
   Alert, FlatList, Platform, Pressable, StyleSheet,
   Text,
-  ToastAndroid,
-  TouchableOpacity,
-  View
+  ToastAndroid, View
 } from 'react-native';
 
 function App(): JSX.Element {
