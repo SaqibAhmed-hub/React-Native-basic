@@ -16,7 +16,7 @@ const MainScreen = ({navigation, route}) =>{
 const style = ({
     textStyle : {
         fontSize: 22,
-        alignitem: 'center',
+        alignItems: 'center',
         fontWeight: "700",
         letterSpacing: 1.2
     }

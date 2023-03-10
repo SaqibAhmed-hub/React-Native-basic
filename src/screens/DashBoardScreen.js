@@ -1,9 +1,10 @@
 import {View} from 'react-native'
+import GlobalStyle from '../utils/GlobalStyle';
 
 
 const DashboardScreen = ({navigation, route}) => {
     return(
-        <View>
+        <View style = {GlobalStyle.body}>
             <Text>
                 DashBoard Screen
             </Text>
